@@ -10,8 +10,20 @@ class QuoteController extends Controller
 {
     /**
      * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
+    {
+        return Inertia::render('Quote');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getQuote()
     {
         $apiKey = "CRM+jZOnOLlFuzm5BS4v3w==UDHitxA5JrtGEvGS";
         $params = ['category' => 'love'];
@@ -21,8 +33,6 @@ class QuoteController extends Controller
 
         $data = $response->json();
 
-        return Inertia::render('Quote', [
-            'data' => $data,
-        ]);
+        return response()->json($data);
     }
 }

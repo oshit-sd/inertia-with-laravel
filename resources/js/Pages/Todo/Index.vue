@@ -2,7 +2,7 @@
 import { reactive, ref } from "vue";
 import { router } from "@inertiajs/vue3";
 
-import Breadcrumb from "../../components/Breadcrumb.vue";
+import Breadcrumb from "@components/Breadcrumb.vue";
 
 defineProps({ data: Array, errors: Object });
 
@@ -41,15 +41,18 @@ function update(item) {
 }
 
 function destroy(item) {
-  delSpinner.value = item.id;
   router.delete(`/todo/${item.id}`, {
     preserveScroll: true,
+    onBefore: () => confirm("Are you sure you want to delete this task?"),
+    onStart: (visit) => {
+      delSpinner.value = item.id;
+    },
     onError: (errors) => {
-      spinner.value = false;
+      delSpinner.value = false;
     },
     onFinish: (visit) => {
       form.task = null;
-      spinner.value = false;
+      delSpinner.value = false;
     },
   });
 }

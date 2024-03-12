@@ -10,4 +10,10 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+            '@components': '/resources/js/components',
+            '@public': '/public'
+        }
+    }
 });
