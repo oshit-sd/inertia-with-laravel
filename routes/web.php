@@ -21,5 +21,11 @@ Route::get('features', [HomeController::class, 'features']);
 Route::get('blog', [HomeController::class, 'blog']);
 Route::get('contact', [HomeController::class, 'contact']);
 
-Route::get('/todo', [TodoController::class, 'index']);
+
+Route::resource('todo', TodoController::class)->except('show', 'create');
+// Route::get('todo', [TodoController::class, 'index'])->name('todo.index');
+// Route::post('todo', [TodoController::class, 'store']);
+// Route::put('todo/{todo}', [TodoController::class, 'update']);
+// Route::delete('todo/{todo}', [TodoController::class, 'store']);
+
 Route::get('quote', [QuoteController::class, 'index']);

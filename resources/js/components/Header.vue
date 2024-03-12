@@ -14,13 +14,36 @@ import { Link } from "@inertiajs/vue3";
       <nav id="navbar" class="navbar">
         <ul>
           <li>
-            <Link class="active" href="/">Home</Link>
+            <Link href="/" :class="{ active: $page.url === '/' }"> Home </Link>
           </li>
-          <li><Link href="/todo">Todo</Link></li>
-          <li><Link href="/quote">Quote</Link></li>
-          <li><Link href="/features">Features</Link></li>
-          <li><Link href="/blog">Blog</Link></li>
-          <li><Link href="/contact">Contact Us</Link></li>
+          <li>
+            <Link href="/todo" :class="{ active: $page.url === '/todo' }">
+              Todo
+            </Link>
+          </li>
+          <li>
+            <Link href="/quote" :class="{ active: $page.url === '/quote' }">
+              Quote
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/features"
+              :class="{ active: $page.url === '/features' }"
+            >
+              Features
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog" :class="{ active: $page.url === '/blog' }">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" :class="{ active: $page.url === '/contact' }">
+              Contact
+            </Link>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
