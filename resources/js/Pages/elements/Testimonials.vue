@@ -36,7 +36,7 @@
 
                   <p class="review-user">
                     <img
-                      src="../../../../public/assets/img/person_1.jpg"
+                      src="@asset/img/person_1.jpg"
                       alt="Image"
                       class="img-fluid rounded-circle mb-3"
                     />
@@ -70,7 +70,7 @@
 
                   <p class="review-user">
                     <img
-                      src="../../../../public/assets/img/person_2.jpg"
+                      src="@asset/img/person_2.jpg"
                       alt="Image"
                       class="img-fluid rounded-circle mb-3"
                     />
@@ -105,7 +105,7 @@
 
                   <p class="review-user">
                     <img
-                      src="../../../../public/assets/img/person_3.jpg"
+                      src="@asset/img/person_3.jpg"
                       alt="Image"
                       class="img-fluid rounded-circle mb-3"
                     />

@@ -49,13 +49,13 @@
             </div>
             <div class="col-lg-4 iphone-wrap">
               <img
-                src="../../../../public/assets/img/phone_1.png"
+                src="@asset/img/phone_1.png"
                 alt="Image"
                 class="phone-1"
                 data-aos="fade-right"
               />
               <img
-                src="../../../../public/assets/img/phone_2.png"
+                src="@asset/img/phone_2.png"
                 alt="Image"
                 class="phone-2"
                 data-aos="fade-right"

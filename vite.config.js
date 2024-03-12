@@ -13,7 +13,8 @@ export default defineConfig({
     resolve: {
         alias: {
             '@components': '/resources/js/components',
-            '@public': '/public'
+            '@page': '/resources/js/Pages',
+            '@asset': '/public/assets'
         }
     }
 });

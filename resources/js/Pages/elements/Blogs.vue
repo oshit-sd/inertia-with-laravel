@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-6" data-aos="fade-left">
           <img
-            src="../../../../public/assets/img/undraw_svg_2.svg"
+            src="@asset/img/undraw_svg_2.svg"
             alt="Image"
             class="img-fluid"
           />
@@ -38,7 +38,7 @@
         </div>
         <div class="col-md-6" data-aos="fade-right">
           <img
-            src="../../../../public/assets/img/undraw_svg_3.svg"
+            src="@asset/img/undraw_svg_3.svg"
             alt="Image"
             class="img-fluid"
           />

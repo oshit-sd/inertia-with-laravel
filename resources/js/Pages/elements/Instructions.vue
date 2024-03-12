@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center mb-5" data-aos="fade">
         <div class="col-md-6 mb-5">
           <img
-            src="../../../../public/assets/img/undraw_svg_1.svg"
+            src="@asset/img/undraw_svg_1.svg"
             alt="Image"
             class="img-fluid"
           />
