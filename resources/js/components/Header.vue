@@ -16,13 +16,11 @@ import { Link } from "@inertiajs/vue3";
           <li>
             <Link class="active" href="/">Home</Link>
           </li>
-          <li>
-            <Link href="/todo">Todo</Link>
-          </li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><Link href="/todo">Todo</Link></li>
+          <li><Link href="/quote">Quote</Link></li>
+          <li><Link href="/features">Features</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
